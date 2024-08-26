@@ -1,6 +1,17 @@
 @use '../abstract' as a;
 
-h1, h2, h3, h4,
-h5, h6, p {
+h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-neutral-color-very-light-grey);
+}
 
+p, a {
+  font-family: 'Lexend Deca', sans-serif;;
+  font-weight: 400;
+  font-size: 0.90rem;
+  line-height: 1.75;
+  color: var(--clr-neutral-color-transparent-white);
 }

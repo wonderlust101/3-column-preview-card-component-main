@@ -1,0 +1,39 @@
+@use '../abstract' as a;
+
+.cards {
+  display: grid;
+  @include a.set-grid-areas(a,b,c);
+  width: min(20rem, 95%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @include a.breakpoint(medium) {
+    width: 55rem;
+    grid-template: 'a b c';
+  }
+
+  &__card {
+    display: grid;
+    justify-items: flex-start;
+    gap: 2rem;
+    padding: 2.5rem;
+
+    &--orange {
+      background-color: var(--clr-primary-color-bright-orange);
+    }
+
+    &--cyan {
+      background-color: var(--clr-primary-color-dark-cyan);
+    }
+
+    &--dark-cyan {
+      background-color: var(--clr-primary-color-very-dark-cyan);
+    }
+  }
+
+  &__card-description {
+    @include a.breakpoint(medium) {
+      margin-bottom: 3rem;
+    }
+  }
+}

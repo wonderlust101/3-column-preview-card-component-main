@@ -1,0 +1,24 @@
+.button {
+  text-decoration: none;
+  padding: 0.50rem 1.75rem;
+  border-radius: 5rem;
+  background-color: var(--clr-neutral-color-very-light-grey);
+  border: 3px solid var(--clr-neutral-color-very-light-grey);
+
+  &--orange {
+    color: var(--clr-primary-color-bright-orange);
+  }
+
+  &--cyan {
+    color: var(--clr-primary-color-dark-cyan);
+  }
+
+  &--dark-cyan {
+    color: var(--clr-primary-color-very-dark-cyan);
+  }
+
+  &:hover {
+    color: var(--clr-neutral-color-very-light-grey);
+    background-color: transparent;
+  }
+}
